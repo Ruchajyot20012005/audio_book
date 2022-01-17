@@ -1,0 +1,47 @@
+.song-file {
+  margin-top: 1rem;
+  padding: 0.5rem 0.5rem;
+  background: rgba(255, 255, 255, 0.178);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.song-file:hover {
+  background: rgba(255, 255, 255, 0.089);
+}
+.title {
+  width: 50%;
+}
+.options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+audio::-webkit-media-controls-panel {
+  background: rgb(255, 255, 255);
+  color: white;
+}
+
+.delete {
+  height: 2rem;
+  width: 2rem;
+  margin: 0 0.5rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: red;
+  transition: 0.3s;
+}
+
+.delete:hover {
+  background: rgba(255, 0, 0, 0.37);
+}
+
+.palyer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

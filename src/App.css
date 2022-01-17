@@ -1,38 +1,67 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.app {
+  height: 100vh;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.form form {
+  padding: 1rem 2rem;
+  background: rgba(255, 255, 255, 0.178);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-bottom: 2px solid black;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.title input {
+  font-family: "Changa", sans-serif;
+  width: 25rem;
+  padding: 0.5rem;
+  background: rgba(0, 0, 0, 0.521);
+  border: 2px solid rgba(0, 0, 0, 0.521);
+  outline: none;
+  color: white;
+  border-radius: 0.3rem;
+}
+
+.title input:focus {
+  border: white;
+  background: rgba(32, 32, 32, 0.658);
+  border: 2px solid rgb(32, 32, 32);
+}
+
+.choose-file input::-webkit-file-upload-button {
+  font-family: "Changa", sans-serif;
+  padding: 0.5rem 1rem;
+  background: rgba(0, 0, 0, 0.521);
+  border: 2px solid rgba(0, 0, 0, 0.521);
+  border-radius: 0.3rem;
+  color: white;
+  transition: 0.5s;
+}
+
+.choose-file input:hover::-webkit-file-upload-button {
+  background: rgba(32, 32, 32, 0.658);
+  border: 2px solid rgb(32, 32, 32);
+}
+
+.submit input {
+  font-family: "Changa", sans-serif;
+  padding: 0.5rem 1rem;
+  background: rgba(1, 85, 26, 0.658);
+  border: 2px solid rgba(1, 85, 26, 0.658);
+  color: white;
+  transition: 0.5s;
+  border-radius: 0.3rem;
+}
+
+.submit input:hover {
+  background: rgba(0, 122, 37, 0.336);
+  border: 2px solid rgb(0, 122, 37);
+}
+
+.msg {
+  background: rgba(1, 85, 26, 0.466);
+  padding: 1rem 2rem;
+  text-align: center;
+  margin-top: 1rem;
 }
